@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GESTION DES ETUDIANTS"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtNumEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro étudiant"/>
+
+    <EditText
+        android:id="@+id/txtNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"/>
+
+    <EditText
+        android:id="@+id/txtMoyenne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Moyenne"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAjouter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ajouter"/>
+
+        <Button
+            android:id="@+id/btnModifier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Modifier"/>
+
+        <Button
+            android:id="@+id/btnSupprimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Supprimer"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listEtudiants"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtMoyClasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moyenne Classe : 0"/>
+
+    <TextView
+        android:id="@+id/txtMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moyenne Minimale : 0"/>
+
+    <TextView
+        android:id="@+id/txtMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moyenne Maximale : 0"/>
+
+    <Button
+        android:id="@+id/btnGraphique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afficher Graphique"/>
+
+</LinearLayout>
